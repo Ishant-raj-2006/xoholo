@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 :root {
+  /* Revert to browser default for a normal scale */
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+:root {
   color-scheme: dark;
   font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
   background: #0f1117;
