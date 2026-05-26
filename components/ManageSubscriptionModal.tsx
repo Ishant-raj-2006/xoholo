@@ -21,16 +21,16 @@ export function ManageSubscriptionModal({ isOpen, subscription, currency, onClos
   function handleAction(action: string) {
     switch (action) {
       case 'notify':
-        onAction(`Notification sent for ${subscription.name}.`)
+        onAction(`Notification sent for ${subscription?.name}.`)
         break
       case 'reminder':
-        onAction(`Reminder set for ${subscription.name}.`)
+        onAction(`Reminder set for ${subscription?.name}.`)
         break
       case 'receipt':
-        onAction(`Receipt ready for ${subscription.name}.`)
+        onAction(`Receipt ready for ${subscription?.name}.`)
         break
       case 'pause':
-        onAction(`${subscription.name} auto-renewal paused.`)
+        onAction(`${subscription?.name} auto-renewal paused.`)
         break
       default:
         onAction('Action completed.')
